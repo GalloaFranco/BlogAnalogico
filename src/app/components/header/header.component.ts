@@ -1,26 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { Page } from '../../interfaces/pages/page';
+import { PageService } from '../../services/pages/page.service';
 
 const MAX_SIZE = 576;
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  pages: any[] = [
-    {title: 'Blog'},
-    {title: 'Nosotros'},
-    {title: 'Tienda'}
-  ];
+    private pages: Page[] = [];
 
-  constructor() { }
+    constructor(readonly pageService: PageService) {
+    }
 
-  ngOnInit() {}
+    ngOnInit() {
+        this.pages = this.pageService.getPages();
+    }
 
-  calculateScreenSize(): boolean {
-    const devWidth = window.screen.width;
-    return devWidth > MAX_SIZE;
-  }
+    calculateScreenSize(): boolean {
+        const devWidth = window.screen.width;
+        return devWidth > MAX_SIZE;
+    }
 
 }
