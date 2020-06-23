@@ -1,5 +1,14 @@
 [
-  {"title":  "Blog"},
-  {"title":  "Nosotros"},
-  {"title":  "Tienda"}
+  {
+    "title":  "Blog",
+    "url": "/blog"
+  },
+  {
+    "title":  "Nosotros",
+    "url": "nosotros"
+  },
+  {
+    "title":  "Tienda",
+    "url": "tienda"
+  }
 ]

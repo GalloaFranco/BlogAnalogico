@@ -2,7 +2,9 @@
   <ion-toolbar color="dark">
     <ion-buttons slot="end">
       <ion-item color="dark" lines="none" [hidden]="!calculateScreenSize()">
-        <ion-button *ngFor="let page of pages" class="ion-text-capitalize">{{page.title}}</ion-button>
+        <ion-button *ngFor="let page of pages"
+                    class="ion-text-capitalize"
+                    routerLink="{{page.url}}">{{page.title}}</ion-button>
       </ion-item>
       <ion-menu-button [hidden]="calculateScreenSize()"></ion-menu-button>
     </ion-buttons>
