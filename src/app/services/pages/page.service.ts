@@ -14,7 +14,7 @@ export class PageService {
     getPages(): Page[] {
         this.pages = [];
         this.http.get<Page[]>('/assets/data/pagesMock.json').subscribe((result) => {
-           this.pages.push(...result);
+            this.pages.push(...result);
         });
         return this.pages;
     }

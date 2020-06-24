@@ -5,10 +5,10 @@
   },
   {
     "title":  "Nosotros",
-    "url": "nosotros"
+    "url": "/nosotros"
   },
   {
     "title":  "Tienda",
-    "url": "tienda"
+    "url": "/tienda"
   }
 ]

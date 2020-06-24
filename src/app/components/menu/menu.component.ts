@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Page } from '../../interfaces/pages/page';
-import { PageService } from '../../services/pages/page.service';
 
 @Component({
     selector: 'app-menu',
@@ -8,14 +7,12 @@ import { PageService } from '../../services/pages/page.service';
     styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-    private pages: Page[] = [];
+    @Input() private pages: Page[] = [];
     private readonly title = 'Menu';
 
-    constructor(readonly pageService: PageService) {
-    }
+    constructor() {}
 
     ngOnInit() {
-        this.pages = this.pageService.getPages();
     }
 
 }
