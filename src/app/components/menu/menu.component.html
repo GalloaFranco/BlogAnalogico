@@ -1,0 +1,15 @@
+<ion-menu
+        menuId="firstMenu"
+        contentId="main"
+        side="end">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>{{title}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="{{page.url}}" *ngFor="let page of pages">{{page.title}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

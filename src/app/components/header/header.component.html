@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="end">
+      <ion-item color="dark" lines="none" [hidden]="!calculateScreenSize()">
+        <ion-button *ngFor="let page of pages"
+                    class="ion-text-capitalize"
+                    routerLink="{{page.url}}">{{page.title}}</ion-button>
+      </ion-item>
+      <ion-menu-button [hidden]="calculateScreenSize()"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-item routerLink='/home' color="dark" lines="none">
+        <ion-avatar>
+          <img alt="" src="/assets/camara.png">
+        </ion-avatar>
+        <ion-title class="ion-text-start; ion-text-capitalize">Blog Analogico</ion-title>
+      </ion-item>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<app-menu [pages]="pages"></app-menu>
