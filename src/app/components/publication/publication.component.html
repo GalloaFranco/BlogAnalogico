@@ -1,0 +1,15 @@
+<ion-card class="animated pulse"
+          button="true"
+          href="/">
+    <ion-card-header>
+        <ion-card-subtitle>
+            <span>{{index + 1}}. </span>
+          <span>{{publication.author}}</span>
+        </ion-card-subtitle>
+        <ion-card-title>{{publication.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-img *ngIf="publication.urlToImage" [src]="publication.urlToImage"></ion-img>
+    <ion-card-content>
+        <p>{{publication.description}}</p>
+    </ion-card-content>
+</ion-card>

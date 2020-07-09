@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Publication } from '../../interfaces/publication/publication';
+import { PublicationsService } from '../../services/publications/publications.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.page.scss'],
 })
 export class BlogPage implements OnInit {
+  private publications: Publication[];
 
-  constructor() { }
+  constructor(readonly publicationsService: PublicationsService) { }
 
   ngOnInit() {
+    this.publications = this.publicationsService.getPublications();
   }
 
 }
