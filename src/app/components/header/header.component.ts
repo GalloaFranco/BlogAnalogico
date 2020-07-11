@@ -19,9 +19,16 @@ export class HeaderComponent implements OnInit {
         this.pages = this.pageService.getPages();
     }
 
-    calculateScreenSize(): boolean {
+    isMenuButtonVisible(): boolean {
         const devWidth = window.screen.width;
         return devWidth > MAX_SIZE;
     }
 
+    get goHome() {
+        return '/home';
+    }
+
+    get logoImage() {
+        return '/assets/camara.png';
+    }
 }

@@ -14,4 +14,7 @@ export class PublicationComponent implements OnInit {
 
   ngOnInit() {}
 
+  get goHome() {
+    return '/home';
+  }
 }
