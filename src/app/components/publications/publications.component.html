@@ -1,0 +1,7 @@
+<ion-grid fixed="false" class="animated fadeIn">
+  <ion-row>
+    <ion-col size="12" size-lg="6" size-md="4" size-sm="6" *ngFor="let publication of publications; index as index ">
+      <app-publication [publication]="publication" [index]="index"></app-publication>
+    </ion-col>
+  </ion-row>
+</ion-grid>
