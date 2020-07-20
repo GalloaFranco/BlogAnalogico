@@ -1,0 +1,19 @@
+<ion-content color="light">
+    <ion-grid fixed="true">
+        <ion-row>
+            <ion-col>
+                <ion-img src="{{publication.urlToImage}}"></ion-img>
+                <ion-item lines="none" color="light">
+                    <ion-title style="text-align: center">{{publication.title}}</ion-title>
+                </ion-item>
+                <ion-item color="light">
+                    <ion-text  style="text-align:center; margin: 0 auto;">{{publication.description}}</ion-text>
+                </ion-item>
+                <br>
+                <ion-item-group>
+                    <ion-text color="medium">{{publication.content}}</ion-text>
+                </ion-item-group>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -7,5 +7,6 @@ export interface Publication {
     description: string;
     urlToImage: string;
     content: string;
+    category: string;
     stats: Statistics;
 }
