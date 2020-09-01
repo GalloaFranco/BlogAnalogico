@@ -1,7 +1,7 @@
 <ion-header>
-    <ion-toolbar color="dark">
+    <ion-toolbar>
         <ion-buttons slot="end">
-            <ion-item color="dark" lines="none" [hidden]="!isMenuButtonVisible()">
+            <ion-item lines="none" [hidden]="!isMenuButtonVisible()">
                 <ion-button *ngFor="let page of pages"
                             class="ion-text-capitalize"
                             routerLink="{{page.url}}">{{page.title}}</ion-button>
@@ -9,7 +9,7 @@
             <ion-menu-button [hidden]="isMenuButtonVisible()"></ion-menu-button>
         </ion-buttons>
         <ion-buttons>
-            <ion-item routerLink="{{goHome}}" color="dark" lines="none">
+            <ion-item routerLink="{{goHome}}" lines="none">
                 <ion-avatar>
                     <img alt="" src="{{logoImage}}">
                 </ion-avatar>

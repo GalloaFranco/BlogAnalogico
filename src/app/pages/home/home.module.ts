@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import {ComponentModule} from '../../components/component.module';
+import { ComponentModule } from '../../components/component.module';
 
 
 @NgModule({
@@ -16,6 +16,7 @@ import {ComponentModule} from '../../components/component.module';
         HomePageRoutingModule,
         ComponentModule
     ],
-  declarations: [HomePage]
+    declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+}

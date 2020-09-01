@@ -1,10 +1,11 @@
 <ion-card class="animated pulse"
           button="true"
-          routerLink="{{goHome}}">
+          (click)="sendAndNavigatePublication(publication)"
+          color="light">
     <ion-card-header>
         <ion-card-subtitle>
             <span>{{index + 1}}. </span>
-          <span>{{publication.author}}</span>
+            <span>{{publication.author}}</span>
         </ion-card-subtitle>
         <ion-card-title>{{publication.title}}</ion-card-title>
     </ion-card-header>
