@@ -3,7 +3,6 @@ import { PublicationsService } from '../../services/publications/publications.se
 import { Publication } from '../../interfaces/publication/publication';
 
 @Component({
-  selector: 'app-publication',
   templateUrl: './publication.page.html',
   styleUrls: ['./publication.page.scss'],
 })
