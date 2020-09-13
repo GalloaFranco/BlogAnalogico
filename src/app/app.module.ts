@@ -13,7 +13,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentModule, HttpClientModule],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(),
+        AppRoutingModule,
+        ComponentModule,
+        HttpClientModule
+    ],
     providers: [
         StatusBar,
         SplashScreen,
